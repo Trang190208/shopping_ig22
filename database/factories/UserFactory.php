@@ -22,7 +22,6 @@ class UserSeeder extends Seeder
 
     public function run()
     {
-        $this->call(UserSeeder::class);
         User::truncate(); //データ一括削除
         factory(User::class, 50)->create(); //50件のテストデータ追加
     }
