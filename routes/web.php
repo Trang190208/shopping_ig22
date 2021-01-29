@@ -31,4 +31,5 @@ Route::group([
     Route::post('add/', 'ItemController@add')->name('add');
     Route::get('edit/{id}', 'ItemController@edit')->name('edit');
     Route::post('update/{id}', 'ItemController@edit')->name('update');
+    Route::post('add/', 'ItemController@add')->name('admin.item.add');
 });
